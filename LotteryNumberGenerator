@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Lottery Number Machine</p>
+
+<button onclick="myFunction()">Generate Lottery Numbers</button>
+
+<p id="lotteryNumber1">Number1</p>
+<p id="lotteryNumber2">Number2</p>
+<p id="lotteryNumber3">Number3</p>
+<p id="lotteryNumber4">Number4</p>
+<p id="lotteryNumber5">Number5</p>
+<p id="lotteryNumber6">Number6</p>
+
+<script>
+
+function myFunction() {
+    document.getElementById("lotteryNumber1").innerHTML = Math.floor((Math.random()*45 +1));
+    let number2 = Math.floor((Math.random()*45 +1));
+    	while (lotteryNumber1 === number2){
+        number2 = Math.floor((Math.random()*45 +1));
+        }
+    	document.getElementById("lotteryNumber2").innerHTML = number2;
+    let number3 = Math.floor((Math.random()*45 +1));
+    	while (lotteryNumber1 === number3 || number2===number3){
+        number3 = Math.floor((Math.random()*45 +1));
+        }
+    	document.getElementById("lotteryNumber3").innerHTML = number3;   
+    let number4 = Math.floor((Math.random()*45 +1));
+    	while (lotteryNumber1 === number4 || number2===number4 || number3===number4 ){
+        number4 = Math.floor((Math.random()*45 +1));
+        }
+    	document.getElementById("lotteryNumber4").innerHTML = number4;  
+    let number5 = Math.floor((Math.random()*45 +1));
+    	while (lotteryNumber1 === number5 || number2===number5 || number3===number5 || number4===number5){
+        number5 = Math.floor((Math.random()*45 +1));
+        }
+    	document.getElementById("lotteryNumber5").innerHTML = number5;  
+    let number6 = Math.floor((Math.random()*45 +1));
+    	while (lotteryNumber1 === number6 || number2===number6 || number3===number6 || number4===number6|| number5===number6){
+        number6 = Math.floor((Math.random()*45 +1));
+        }
+    	document.getElementById("lotteryNumber6").innerHTML = number6;
+}
+
+
+</script>
+
+</body>
+</html>
