@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Compare Height & Time 5 weight</p>
+
+
+<script>
+let oneHeight = prompt("What is your height?");
+let twoHeight = prompt("What is your friend's height?");
+
+let oneAgeFiveTimes = prompt('What is your age?') * 5 ;
+let twoAgeFiveTimes = prompt('What is your friends age?') * 5;
+
+let scoreOne = Number(oneHeight) + Number(oneAgeFiveTimes);
+let scoreTwo = Number(twoHeight) + Number(twoAgeFiveTimes);
+
+alert(`Your Score is ${scoreOne}. Your Friend Score is ${scoreTwo}.`)
+
+if (scoreOne > scoreTwo) {
+alert('You win!');
+}
+
+else {
+alert('Your friend wins!');
+}
+
+</script>
+
+</body>
+</html>
