@@ -1,0 +1,47 @@
+
+Run »Result Size: 251 x 574
+
+<!DOCTYPE html>
+<html>
+<body>
+​
+<p>Compare Height & Age (x5)</p>
+​
+​
+<script>
+let oneHeight = prompt("What is your height?");
+let twoHeight = prompt("What is your friend's height?");
+let threeHeight = prompt("What is your friend's height?");
+​
+let oneAgeFiveTimes = prompt('What is your age?') * 5 ;
+let twoAgeFiveTimes = prompt('What is your friend\'s age?') * 5;
+let threeAgeFiveTimes = prompt('What is your other friend\'s age?') * 5;
+​
+let scoreOne = Number(oneHeight) + Number(oneAgeFiveTimes);
+let scoreTwo = Number(twoHeight) + Number(twoAgeFiveTimes);
+let scoreThree = Number(threeHeight) + Number(threeAgeFiveTimes);
+​
+alert(`Your Score is ${scoreOne}.\nYour Friend Score is ${scoreTwo}.\nYour Other Friend Score is ${scoreThree}.`);
+​
+if (scoreOne > scoreTwo && scoreTwo > scoreThree) {
+alert('You win!');
+}
+​
+else if (scoreOne < scoreTwo && scoreTwo < scoreThree) {
+alert('You Other friend wins!');
+}
+​
+else if (scoreOne < scoreTwo && scoreTwo > scoreThree) {
+alert('You friend wins!');
+}
+​
+else if (scoreOne == scoreTwo && scoreTwo == scoreThree) {
+alert('You All Draw');
+}
+​
+else if (scoreOne == scoreTwo && scoreThree < scoreTwo) {
+alert('You & Your friend Draw');
+}
+​
+else if (scoreOne == scoreThree && scoreThree > scoreTwo) {
+
